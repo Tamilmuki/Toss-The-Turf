@@ -1,58 +1,17 @@
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+/* CSS for the images, turf logo, and team names */
+.team img {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    margin-bottom: 10px; /* Add margin to separate the image from other elements */
 }
 
-.team {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-    text-align: center;
+#turfName img {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    margin-right: 10px; /* Add margin to separate the logo from the text */
 }
 
-.team button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.team button:hover {
-    background-color: #45a049;
-}
-
-/* CSS for the umpire animation */
-#umpireAnimation {
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-}
-
-@keyframes umpireSignal {
-    from { background-position: 0 0; }
-    to { background-position: -800px 0; }
-}
-
-#umpireAnimation.umpireAnimationSix {
-    animation: umpireSignal 0.5s steps(8) forwards;
-}
-
-#umpireAnimation.umpireAnimationFour {
-    animation: umpireSignal 0.5s steps(8) reverse forwards;
-}
-
-#umpireAnimation.umpireAnimationOut {
-    animation: umpireSignalOut 0.5s steps(8) forwards;
-}
-
-@keyframes umpireSignalOut {
-    from { background-position: 0 -100px; }
-    to { background-position: -800px -100px; }
+.team h2 {
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold;
 }
