@@ -8,30 +8,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="turfName">
-        <img src="turf_logo.png" alt="Turf Logo">
-        <h2>TOSS THE TURF</h2>
-    </div>
-
-    <div class="scoreboard">
-        <div class="team" id="team1">
-            <img src="team1_logo.png" alt="Team 1 Logo">
-            <h2>Team 1</h2>
-            <p id="team1Score">0 runs</p>
-            <p id="team1Wickets">0 wickets</p>
-            <button onclick="updateScore('team1')">Update Score</button>
+    <div class="container">
+        <div id="turfName">
+            <img src="turf_logo.png" alt="Turf Logo">
+            <h2>Your Turf Name Here</h2>
         </div>
 
-        <div class="team" id="team2">
-            <img src="team2_logo.png" alt="Team 2 Logo">
-            <h2>Team 2</h2>
-            <p id="team2Score">0 runs</p>
-            <p id="team2Wickets">0 wickets</p>
-            <button onclick="updateScore('team2')">Update Score</button>
-        </div>
-    </div>
+        <div class="scoreboard">
+            <div class="team" id="team1">
+                <img src="team1_logo.png" alt="Team 1 Logo">
+                <h2>Team 1</h2>
+                <p id="team1Score">0 runs</p>
+                <p id="team1Wickets">0 wickets</p>
+                <button onclick="updateScore('team1')">Update Score</button>
+            </div>
 
-    <div id="umpireAnimation"></div>
+            <div class="team" id="team2">
+                <img src="team2_logo.png" alt="Team 2 Logo">
+                <h2>Team 2</h2>
+                <p id="team2Score">0 runs</p>
+                <p id="team2Wickets">0 wickets</p>
+                <button onclick="updateScore('team2')">Update Score</button>
+            </div>
+        </div>
+
+        <div id="umpireAnimation"></div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
     <script src="app.js"></script>
