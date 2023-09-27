@@ -1,17 +1,31 @@
+/* CSS for the container */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 /* CSS for the images, turf logo, and team names */
-.team img {
-    width: 50px; /* Adjust width as needed */
-    height: 50px; /* Adjust height as needed */
-    margin-bottom: 10px; /* Add margin to separate the image from other elements */
+.container img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
-#turfName img {
-    width: 100px; /* Adjust width as needed */
-    height: 100px; /* Adjust height as needed */
-    margin-right: 10px; /* Add margin to separate the logo from the text */
+.container #turfName img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
 }
 
-.team h2 {
-    font-size: 20px; /* Adjust font size as needed */
+.container h2 {
+    font-size: 20px;
     font-weight: bold;
 }
